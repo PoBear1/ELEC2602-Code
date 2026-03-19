@@ -1,0 +1,73 @@
+$date
+	Thu Mar 12 12:54:32 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module part1_TB $end
+$var wire 4 ! output1 [3:0] $end
+$var reg 4 " count [3:0] $end
+$var reg 4 # input1 [3:0] $end
+$var reg 4 $ input2 [3:0] $end
+$var reg 1 % select $end
+$scope module instantiate_mux4 $end
+$var wire 4 & a [3:0] $end
+$var wire 4 ' b [3:0] $end
+$var wire 1 % sel $end
+$var reg 4 ( chosen [3:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b0 (
+b1 '
+b0 &
+0%
+b1 $
+b0 #
+b0 "
+b0 !
+$end
+#50000
+b11 !
+b11 (
+1%
+b11 $
+b11 '
+b10 #
+b10 &
+b1 "
+#100000
+b100 !
+b100 (
+0%
+b111 $
+b111 '
+b100 #
+b100 &
+b10 "
+#150000
+b1111 !
+b1111 (
+1%
+b1111 $
+b1111 '
+b1000 #
+b1000 &
+b11 "
+#200000
+b0 !
+b0 (
+0%
+b0 $
+b0 '
+b0 #
+b0 &
+b100 "

@@ -1,0 +1,133 @@
+$date
+	Thu Mar 12 13:15:54 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module part3_TB $end
+$var wire 2 ! output1 [1:0] $end
+$var reg 4 " count [3:0] $end
+$var reg 2 # input1 [1:0] $end
+$var reg 2 $ input2 [1:0] $end
+$var reg 2 % input3 [1:0] $end
+$var reg 2 & input4 [1:0] $end
+$var reg 2 ' select [1:0] $end
+$scope module instantiate_mux4_2bit $end
+$var wire 2 ( s [1:0] $end
+$var wire 2 ) u [1:0] $end
+$var wire 2 * v [1:0] $end
+$var wire 2 + w [1:0] $end
+$var wire 2 , x [1:0] $end
+$var reg 2 - m [1:0] $end
+$var reg 2 . t1 [1:0] $end
+$var reg 2 / t2 [1:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b0 /
+b1 .
+b1 -
+b0 ,
+b0 +
+b0 *
+b1 )
+b0 (
+b0 '
+b0 &
+b0 %
+b0 $
+b1 #
+b0 "
+b1 !
+$end
+#50000
+b0 !
+b0 -
+b0 .
+b1 '
+b1 (
+b1 "
+#100000
+b1 .
+b10 '
+b10 (
+b10 "
+#150000
+b0 .
+b11 '
+b11 (
+b11 "
+#200000
+b0 '
+b0 (
+b1 $
+b1 *
+b0 #
+b0 )
+b100 "
+#250000
+b1 !
+b1 -
+b1 .
+b1 '
+b1 (
+b101 "
+#300000
+b0 .
+b0 !
+b0 -
+b10 '
+b10 (
+b110 "
+#350000
+b1 .
+b11 '
+b11 (
+b111 "
+#400000
+b1 !
+b1 -
+b1 '
+b1 (
+b10 %
+b10 +
+b1000 "
+#450000
+b0 .
+b10 /
+b10 !
+b10 -
+b10 '
+b10 (
+b1001 "
+#500000
+b0 /
+b11 !
+b11 -
+b11 .
+b1 '
+b1 (
+b11 $
+b11 *
+b1010 "
+#550000
+b0 !
+b0 -
+b0 .
+b0 '
+b0 (
+b0 %
+b0 +
+b0 $
+b0 *
+b1011 "
+#600000
+b1100 "

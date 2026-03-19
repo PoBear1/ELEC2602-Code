@@ -1,0 +1,5 @@
+circuitA.v
+circuitB.v
+circuitC.v
+labtest_q2_hardware.v
+testbench_labtest2_combinational.v
