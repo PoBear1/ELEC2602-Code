@@ -1,0 +1,7 @@
+decoder_7seg.v
+one_bit_2to1mux.v
+one_bit_4to1mux.v
+two_bit_4to1mux.v
+lab3_P2.v
+lab3_P2_TB.v
+
