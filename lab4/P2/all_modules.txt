@@ -1,0 +1,8 @@
+binary_to_7seg.v
+circuitA.v
+circuitB.v
+comparator.v
+four_bit_2to1mux.v
+lab4_p2.v
+lab4_p2_TB.v
+one_bit_2to1mux.v
