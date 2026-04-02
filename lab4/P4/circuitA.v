@@ -1,9 +1,9 @@
 module circuitA (v, A);
 	input [3:0] v;
-	output [3:0] A;
+	output reg [3:0] A;
   
-	always @(binary) begin
-		case (binary)
+	always @(v) begin
+		case (v)
 			4'b0000 : begin A = 4'b0000; end
 			4'b0001 : begin A = 4'b0001; end
 			4'b0010 : begin A = 4'b0010; end
@@ -22,4 +22,4 @@ module circuitA (v, A);
 			default : begin A = 4'b0101; end
 		endcase
 	end
-endmodule;
+endmodule

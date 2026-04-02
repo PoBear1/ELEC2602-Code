@@ -9,7 +9,7 @@ module lab4_p2 (v, d1, d2);
 	circuitA inst_circA(.v(v),.A(wire1));
 	comparator inst_comp(.v(v),.z(wire3));
 	circuitB inst_circB(.z(wire3),.d1(d1));
-	four_bit_2to1mux inst_mux(.sel(wire3),.a(v),.b(wire1),.chosen(wire2));
+	four_bit_2to1mux inst_mux(.sel(wire3),.a(wire1),.b(v),.chosen(wire2));
 	binary_to_7Seg instantiate_bto7seg(.binary(wire2),.sevenSeg(d2));
 	
-endmodule;
+endmodule

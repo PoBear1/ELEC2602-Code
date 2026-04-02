@@ -8,4 +8,4 @@ module comparator (v, z);
 	  else
 		z = 1'b1;
 	end
-endmodule;
+endmodule
