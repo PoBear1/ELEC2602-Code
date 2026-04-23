@@ -1,27 +1,23 @@
-module fast_ctr(clock, T, rst, q);
-	input clock, T, rst
-	output wire[31:0] q;
-	reg[31:0]; t
-	assign t[0] <= T;
-	genvar i;
-	generate
-		for(i = 0; i < 32; i = i + 1) begin
-			pos_t_ff ff(.t(t[i]), .clk(clock), .q(q[i]), .rst(rst));
-			assign t[j] = q[j] & t[j - 1];
-		end
-	endgenerate
-	always @(q) begin
-		if(q == 50000000) begin
-			q <= 32'b0;
+module fast_ctr_1(clock, rst, q);
+	input clock, rst;
+	output[31:0] q;
+	always @(posedge clock or posedge rst) begin
+		if(rst == 1'b1) begin
+			q <= 0;
+		end else begin
+			q <= q + 1;
 		end
 	end
 endmodule
 
-module slow_ctr(clock, T, rst, q);
-	input clock, T, rst;
+module fast_ctr(clock, rst, q);
+
+
+module slow_ctr(clock, rst, q);
+	input clock, rst;
 	output reg[3:0] q;
 	reg[31:0] q1;
-	fast_ctr ctr(.clock(clock), .T(T), .rst(rst), .q(q1));
+	fast_ctr ctr(.clock(clock), .rst(rst), .q(q1));
 	always @(q1) begin
 		if(q1 == 0) begin
 			q <= q + 1;
