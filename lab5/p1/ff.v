@@ -24,7 +24,7 @@ module pos_t_ff(t, clk, q, rst);
 	pos_d_ff ff(.d(d), .clk(clk), .q(q), .rst(rst));
 endmodule
 
-module pos_t_ff(t, clk, q, rst);
+module neg_t_ff(t, clk, q, rst);
 	input t, clk, rst;
 	inout reg q;
 	reg d;
