@@ -1,7 +1,7 @@
 module fast_ctr(clock, T, rst, q);
 	input clock, T, rst
-	output reg q[31:0];
-	reg t[31:0];
+	output reg[31:0] q;
+	reg[31:0]; t
 	assign t[0] <= T;
 	genvar j;
 	for(j = 1; j < 32; j = j + 1) begin
@@ -22,8 +22,8 @@ endmodule
 
 module slow_ctr(clock, T, rst, q);
 	input clock, T, rst;
-	output reg q[3:0];
-	reg q1[32:0];
+	output reg[3:0] q;
+	reg[31:0] q1;
 	fast_ctr ctr(.clock(clock), .T(T), .rst(rst), .q(q1));
 	always @(q1) begin
 		if(q1 == 0) begin
