@@ -1,6 +1,6 @@
 module fast_ctr_1(clock, rst, q);
 	input clock, rst;
-	output[31:0] q;
+	output reg[31:0] q;
 	always @(posedge clock or posedge rst) begin
 		if(rst == 1'b1) begin
 			q <= 0;
@@ -11,7 +11,14 @@ module fast_ctr_1(clock, rst, q);
 endmodule
 
 module fast_ctr(clock, rst, q);
-
+	input clock;
+	input reg rst;
+	output q;
+	always @(q) begin
+		if(q == 50000000) rst = 1'b1;
+	end
+	fast_ctr_1 ctr(.clock(clock), .rst(rst), .q(q));
+endmodule
 
 module slow_ctr(clock, rst, q);
 	input clock, rst;
